@@ -1,0 +1,227 @@
+[수강생 배포용] AI 도구별 공식 가이드 활용 안내
+
+안녕하세요.
+아래 내용은 각 AI 도구를 사용할 때, ChatGPT에게 해당 도구 전용 프롬프트를 요청하기 위한 기본 안내문입니다.
+
+중요:
+1. 공식 가이드 주소는 한 번에 전부 넣지 마세요.
+2. 반드시 도구별로 따로 넣으세요.
+3. 예를 들어 수노 프롬프트를 요청할 때는 수노 공식 가이드 주소만 넣고,
+   미드저니 프롬프트를 요청할 때는 미드저니 공식 가이드 주소만 넣는 방식이 가장 정확합니다.
+4. 이렇게 해야 답변 기준이 섞이지 않고, 더 정확한 결과를 받을 수 있습니다.
+
+--------------------------------------------------
+1. 기본 사용법
+--------------------------------------------------
+아래 템플릿의 [공식 가이드 주소 붙여넣기] 부분에,
+내가 사용할 도구의 공식 가이드 주소만 넣어서 사용하면 됩니다.
+
+[기본 요청 템플릿]
+
+아래는 내가 사용할 AI 도구의 공식 가이드입니다.
+
+[공식 가이드 주소 붙여넣기]
+
+이 가이드를 기준으로 앞으로 나를 도와주세요.
+
+먼저 다음 내용을 정리해주세요.
+
+1. 이 도구에서 프롬프트를 작성할 때 가장 중요한 규칙
+2. 꼭 지켜야 할 제한사항
+3. 좋은 프롬프트 구조
+4. 피해야 할 프롬프트 방식
+5. 초보자가 바로 쓸 수 있는 요청 템플릿
+6. 내가 이 도구용 프롬프트를 요청했을 때 사용할 기본 출력 형식
+
+앞으로 제가 이 도구용 프롬프트를 요청하면,
+반드시 위 공식 가이드 기준으로 작성해주세요.
+공식 가이드에 없는 내용은 추측하지 말고,
+불확실한 부분은 “확인 필요”라고 표시해주세요.
+
+--------------------------------------------------
+2. 꼭 기억할 점
+--------------------------------------------------
+- 한 번에 여러 도구의 링크를 섞어서 넣지 마세요.
+- 도구별로 따로 요청하는 것이 가장 좋습니다.
+- 공식 가이드에 없는 내용은 답변에서 제외하도록 요청하세요.
+- 불확실한 부분은 반드시 “확인 필요”로 표시하도록 요청하세요.
+
+--------------------------------------------------
+3. 도구별 공식 가이드 주소 모음
+--------------------------------------------------
+
+[1] Suno
+권장 공식 주소:
+https://suno.com/hub
+https://help.suno.com/
+https://help.suno.com/en/collections/6325038-creating-music
+https://help.suno.com/en/collections/6331001-lyrics-writing
+https://help.suno.com/en/collections/6325029-copyright-commercial-use
+
+추천 사용 방법:
+- Suno 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 음악 생성, 가사 작성, 저작권/상업 이용 관련 내용 확인에 적합
+
+
+[2] Midjourney
+권장 공식 주소:
+https://docs.midjourney.com/
+https://docs.midjourney.com/docs/prompts
+https://docs.midjourney.com/docs/parameter-list
+https://docs.midjourney.com/docs/image-prompts
+https://docs.midjourney.com/docs/style-reference
+https://docs.midjourney.com/docs/character-reference
+https://docs.midjourney.com/docs/commercial-use
+
+추천 사용 방법:
+- Midjourney 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 프롬프트 구조, 파라미터, 스타일 레퍼런스, 캐릭터 레퍼런스 확인에 적합
+
+
+[3] Runway
+권장 공식 주소:
+https://help.runwayml.com/
+https://help.runwayml.com/hc/en-us/categories/15124877443219-Runway-Academy
+https://help.runwayml.com/hc/en-us/categories/19958271585043-Gen-4
+https://help.runwayml.com/hc/en-us/articles/37552794641171-Gen-4-Video-Prompting-Guide
+https://help.runwayml.com/hc/en-us/articles/37955974698515-Gen-4-Image-to-Video-Prompting-Guide
+https://help.runwayml.com/hc/en-us/articles/37880418497939-Gen-4-Reference-Prompting-Guide
+https://help.runwayml.com/hc/en-us/articles/38091963567443-Gen-4-Camera-Control-Guide
+https://help.runwayml.com/hc/en-us/categories/24051376266131-Gen-4-5
+
+추천 사용 방법:
+- Runway 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 텍스트 투 비디오, 이미지 투 비디오, 카메라 무빙, 레퍼런스 활용 확인에 적합
+
+
+[4] Grok Imagine
+권장 공식 주소:
+https://docs.x.ai/developers/model-capabilities/imagine
+https://docs.x.ai/developers/model-capabilities/images/generation
+https://docs.x.ai/developers/model-capabilities/video/generation
+https://docs.x.ai/developers/model-capabilities/video/image-to-video
+https://x.ai/news/grok-imagine-api
+
+추천 사용 방법:
+- Grok Imagine 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 이미지 생성, 이미지 편집, 텍스트 기반 영상 생성, 이미지 기반 영상 생성 확인에 적합
+
+
+[5] Meta AI
+권장 공식 주소:
+https://ai.meta.com/learn/ai-creativity/ai-art-prompts-5-examples-and-how-to-create-them/
+https://ai.meta.com/learn/ai-creativity/prompts-for-ai-images-10-examples-and-tips-for-better-results/
+https://www.meta.ai/
+https://www.meta.ai/ai-video-generator/
+https://www.meta.ai/vibes/
+
+추천 사용 방법:
+- Meta AI 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 이미지 프롬프트 기본 원리, 예시, AI 비디오 기능 확인에 적합
+
+
+[6] Higgsfield / Seedance
+권장 공식 주소:
+https://higgsfield.ai/
+https://higgsfield.ai/ai-video
+https://higgsfield.ai/seedance/2.0
+https://higgsfield.ai/blog/seedance-prompting-guide
+https://higgsfield.ai/pricing
+
+추천 사용 방법:
+- Higgsfield 또는 Seedance 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 Seedance 프롬프트 구조, 영상 생성 방식, 서비스 기능 확인에 적합
+
+
+[7] Dreamina / Seedance
+권장 공식 주소:
+https://dreamina.capcut.com/
+https://dreamina.capcut.com/tools/ai-video-generator
+https://dreamina.capcut.com/tools/seedance-2-0
+https://dreamina.capcut.com/resource/what-is-seedance-2-0
+https://dreamina.capcut.com/resource/ai-art-prompt
+https://dreamina.capcut.com/resource/text-to-image-prompts
+https://dreamina.capcut.com/resource/prompt-to-video-ai
+
+추천 사용 방법:
+- Dreamina 또는 Seedance 관련 요청 시 위 링크들만 넣어서 사용
+- 특히 초보자용 사용법, 이미지/영상 프롬프트, Seedance 활용 확인에 적합
+
+--------------------------------------------------
+4. 도구별 복붙용 예시
+--------------------------------------------------
+
+예시 1) Suno용
+
+아래는 내가 사용할 AI 도구의 공식 가이드입니다.
+
+https://suno.com/hub
+https://help.suno.com/
+https://help.suno.com/en/collections/6325038-creating-music
+https://help.suno.com/en/collections/6331001-lyrics-writing
+https://help.suno.com/en/collections/6325029-copyright-commercial-use
+
+이 가이드를 기준으로 앞으로 나를 도와주세요.
+
+먼저 다음 내용을 정리해주세요.
+
+1. 이 도구에서 프롬프트를 작성할 때 가장 중요한 규칙
+2. 꼭 지켜야 할 제한사항
+3. 좋은 프롬프트 구조
+4. 피해야 할 프롬프트 방식
+5. 초보자가 바로 쓸 수 있는 요청 템플릿
+6. 내가 이 도구용 프롬프트를 요청했을 때 사용할 기본 출력 형식
+
+앞으로 제가 이 도구용 프롬프트를 요청하면,
+반드시 위 공식 가이드 기준으로 작성해주세요.
+공식 가이드에 없는 내용은 추측하지 말고,
+불확실한 부분은 “확인 필요”라고 표시해주세요.
+
+
+예시 2) Midjourney용
+
+아래는 내가 사용할 AI 도구의 공식 가이드입니다.
+
+https://docs.midjourney.com/
+https://docs.midjourney.com/docs/prompts
+https://docs.midjourney.com/docs/parameter-list
+https://docs.midjourney.com/docs/image-prompts
+https://docs.midjourney.com/docs/style-reference
+https://docs.midjourney.com/docs/character-reference
+https://docs.midjourney.com/docs/commercial-use
+
+이 가이드를 기준으로 앞으로 나를 도와주세요.
+
+먼저 다음 내용을 정리해주세요.
+
+1. 이 도구에서 프롬프트를 작성할 때 가장 중요한 규칙
+2. 꼭 지켜야 할 제한사항
+3. 좋은 프롬프트 구조
+4. 피해야 할 프롬프트 방식
+5. 초보자가 바로 쓸 수 있는 요청 템플릿
+6. 내가 이 도구용 프롬프트를 요청했을 때 사용할 기본 출력 형식
+
+앞으로 제가 이 도구용 프롬프트를 요청하면,
+반드시 위 공식 가이드 기준으로 작성해주세요.
+공식 가이드에 없는 내용은 추측하지 말고,
+불확실한 부분은 “확인 필요”라고 표시해주세요.
+
+--------------------------------------------------
+5. 가장 추천하는 사용 방식
+--------------------------------------------------
+가장 추천하는 방식은 아래와 같습니다.
+
+1) 먼저 사용할 도구를 하나 정합니다.
+2) 그 도구의 공식 가이드 링크만 복사합니다.
+3) 기본 요청 템플릿에 붙여넣습니다.
+4) ChatGPT에게 먼저 “공식 가이드 요약”을 시킵니다.
+5) 그 다음부터 해당 도구 전용 프롬프트를 요청합니다.
+
+이 방식이 가장 깔끔하고, 결과도 안정적입니다.
+
+--------------------------------------------------
+6. 한 줄 정리
+--------------------------------------------------
+공식 가이드는 “도구별로 따로” 넣는 것이 핵심입니다.
+여러 도구를 한 번에 섞으면 기준이 섞여서 답변 정확도가 떨어질 수 있습니다.
+
