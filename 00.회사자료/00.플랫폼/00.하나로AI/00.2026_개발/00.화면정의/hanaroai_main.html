@@ -1,0 +1,969 @@
+
+  <main class="min-h-screen bg-[#F8FAFC] font-sans antialiased text-slate-800 pb-24">
+
+    <!-- Hero Section (Clean Soft Gradient White Canvas with AI Generator Panel on the Left) -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-[#F8FAFC] text-slate-900 py-12 sm:py-20 border-b border-slate-200/70">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(59,130,246,0.12),rgba(255,255,255,0))] pointer-events-none">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <!-- LEFT: Inline AI Draft Generator Panel (Exact Match with Uploaded Image) -->
+          <div class="lg:col-span-7 xl:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-xl shadow-blue-900/5 border border-slate-200/90 space-y-5 relative">
+
+              <!-- Supplementary Keywords Textarea -->
+              <div class="space-y-1.5">
+                <label class="text-xs font-bold text-slate-700">판매하는 상품이나 서비스를 알려주세요.</label>
+                <textarea id="id_dscd_frm_inpd_dscd_desc" rows="5"
+                  placeholder="예:
+- 상품: 저자극 비타민C 세럼
+- 주요 고객: 기미·잡티가 고민인 20~40대
+- 강점: 민감성 피부도 쓰기 좋은 순한 성분
+- 판매 채널: 자체 스토어, 스마트스토어"
+                  class="w-full px-4 py-3 bg-slate-50/80 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/10 focus:outline-none transition-all resize-y min-h-[120px]"></textarea>
+              </div>
+
+              <!-- Action Button -->
+              <button type="button" id="btnConfig"
+                class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-indigo-600/25 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50">
+                <span>고객이 찾는 질문 분석하기</span>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- RIGHT: Hero Branding & Hanaro AI Storytelling -->
+          <div class="lg:col-span-5 xl:col-span-5 space-y-4 text-center lg:text-left flex flex-col justify-center">
+
+            <h1 class="text-4xl sm:text-4xl font-black tracking-tight leading-[1.15] text-slate-950">
+              하나로<span class="text-blue-600">AI</span>
+            </h1>
+
+            <!-- Storytelling Bullet Cards -->
+            <div class="space-y-2.5 text-left">
+              <div class="p-3.5 bg-white/80 rounded-2xl border border-slate-200/80 shadow-2xs space-y-1">
+                <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
+                  고객이 검색하는 질문을 찾아내고,
+                </p>
+                <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
+                  검증된 정보 콘텐츠로 내 상품을 연결합니다
+                </p>
+              </div>
+
+              <div
+                class="p-3.5 bg-gradient-to-r from-blue-50 to-indigo-50/60 rounded-2xl border border-blue-200/70 space-y-1">
+                <p class="text-xs sm:text-sm font-bold text-blue-950 flex items-center gap-2">
+                  광고 대신 정보로, 발견에서 판매까지 하나로!
+                </p>
+              </div>
+
+              <div class="p-3.5 bg-slate-900 text-white rounded-2xl shadow-md space-y-1">
+                <p class="text-xs sm:text-sm font-bold tracking-tight text-blue-300">
+                  고객이 찾는 정보가 새로운 판매 채널이 됩니다!
+                </p>
+                <p class="text-xs text-slate-300 font-normal">
+                  지금 바로 좌측에 상품을 입력하고 첫 정보 콘텐츠를 확인해보세요.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Auto Swipe Banner Slider (Clean, Minimal & Bright Card Style) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
+      <div
+        class="bg-white rounded-2xl p-6 sm:p-7 shadow-xl shadow-slate-200/60 border border-slate-200/80 overflow-hidden">
+        <div id="banner-slider" class="relative">
+          <div class="overflow-hidden rounded-xl">
+            <div id="slide-container" class="flex transition-transform duration-500 ease-out"
+              style="transform: translateX(0%);">
+
+              <!-- Slide 1: Clean Soft Blue & Indigo Gradient -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 items-center gap-6 p-7 bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 text-white rounded-xl shadow-inner relative overflow-hidden">
+                <div class="absolute right-0 top-0 w-72 h-72 bg-white/10 rounded-full blur-2xl pointer-events-none">
+                </div>
+                <div class="space-y-3 relative z-10">
+                  <span
+                    class="inline-block px-3 py-1 bg-white/20 border border-white/30 text-white text-xs font-bold rounded-full backdrop-blur-sm">AI
+                    Content Engine</span>
+                  <h3 class="text-2xl font-black tracking-tight text-white">검증 콘텐츠 생성 엔진 오픈</h3>
+                  <p class="text-sm text-blue-50 leading-relaxed font-normal">고객 질문을 기반으로 정보를 수집·검증해 콘텐츠를 만들고, 블로그·SNS 발행과 스토어
+                    상품 연결까지 한 번에 진행하세요.</p>
+                </div>
+                <div class="flex justify-center md:justify-end relative z-10">
+                  <div
+                    class="w-24 h-24 sm:w-28 sm:h-28 bg-white/15 border border-white/25 rounded-2xl backdrop-blur-md flex items-center justify-center font-black text-2xl shadow-lg">
+                    AI ⚡
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Clean Slate & Navy Neutral Gradient -->
+              <div
+                class="w-full shrink-0 grid grid-cols-1 md:grid-cols-2 items-center gap-6 p-7 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 text-white rounded-xl shadow-inner relative overflow-hidden">
+                <div class="absolute right-0 top-0 w-72 h-72 bg-blue-500/10 rounded-full blur-2xl pointer-events-none">
+                </div>
+                <div class="space-y-3 relative z-10">
+                  <span
+                    class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold rounded-full backdrop-blur-sm">통합
+                    관리</span>
+                  <h3 class="text-2xl font-black tracking-tight text-white">판매·예약·문의를 한 곳에서</h3>
+                  <p class="text-sm text-slate-200 leading-relaxed font-normal">콘텐츠로 유입된 고객의 주문, 예약, 문의, 커뮤니티 활동과 성과를 하나의 관리자
+                    화면에서 확인하세요.</p>
+                </div>
+                <div class="flex justify-center md:justify-end relative z-10">
+                  <div
+                    class="w-24 h-24 sm:w-28 sm:h-28 bg-blue-500/15 border border-blue-400/30 rounded-2xl backdrop-blur-md flex items-center justify-center font-black text-2xl text-blue-200 shadow-lg">
+                    💎
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Indicator Dots -->
+          <div class="flex justify-center gap-2 mt-4">
+            <button onclick="goToSlide(0)" class="w-6 h-2 rounded-full bg-blue-600 slide-dot transition-all"></button>
+            <button onclick="goToSlide(1)" class="w-2 h-2 rounded-full bg-slate-300 slide-dot transition-all"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 2. 하나로AI 핵심 메시지 & 상세 설명 & 고객 혜택 & CTA Section (Core Value) -->
+  <!-- ========================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+    <div class="space-y-16">
+      
+      <!-- 2.1 핵심 메시지 & 상세 설명 (Core Message & Detailed Workflow) -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs font-bold tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+          CONTENT COMMERCE ENGINE
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight leading-[1.2]">
+          고객의 질문에서 상품 판매까지,<br class="hidden sm:block">
+          <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">발견과 판매를 하나로</span> 연결합니다
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal pt-1">
+          광고로 고객을 쫓지 마세요. 하나로AI는 고객이 실제로 궁금해하는 질문을 찾아 검증된 정보 콘텐츠로 만들고, 검색·AI·SNS에서 발견된 고객이 자연스럽게 상품을 만나 구매와 재방문으로 이어지도록 돕습니다.
+        </p>
+      </div>
+
+      <!-- 3-Step 상세 설명 프로세스 카드 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Step 1 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-blue-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-black text-lg shadow-md shadow-blue-500/20">
+                01
+              </span>
+              <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+                질문 발견
+              </span>
+            </div>
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+              고객이 찾는 질문 분석
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              등록한 상품과 키워드를 바탕으로 고객의 검색어와 관심 주제를 분석해, 지금 어떤 정보 콘텐츠가 필요한지 제안합니다.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500 relative z-10">
+            <span class="text-blue-600 font-bold">✓</span> 무엇을 써야 할지 고민 끝
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-indigo-300 transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-indigo-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg shadow-md shadow-indigo-500/20">
+                02
+              </span>
+              <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
+                검증 콘텐츠
+              </span>
+            </div>
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight group-hover:text-indigo-600 transition-colors">
+              검증된 정보 콘텐츠 생성
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              다양한 출처의 정보를 수집하고 사실을 교차검증한 뒤, 사장님의 상품과 현장 경험을 더해 고객에게 유용한 콘텐츠로 만듭니다.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500 relative z-10">
+            <span class="text-indigo-600 font-bold">✓</span> 광고가 아닌 신뢰받는 정보
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-purple-300 transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-28 h-28 bg-purple-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center font-black text-lg shadow-md shadow-purple-500/20">
+                03
+              </span>
+              <span class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">
+                발견 &amp; 판매
+              </span>
+            </div>
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight group-hover:text-purple-600 transition-colors">
+              노출부터 판매·재방문까지
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              블로그·SNS 발행과 SEO·GEO 구조화로 고객에게 발견되고, 콘텐츠 속 상품이 구매·예약·문의로 자연스럽게 연결됩니다.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500 relative z-10">
+            <span class="text-purple-600 font-bold">✓</span> 콘텐츠가 판매 채널이 되는 구조
+          </div>
+        </div>
+      </div>
+
+      <!-- 2.2 고객 혜택 (Customer Benefits 4 Grid) -->
+      <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 space-y-10">
+          
+          <div class="max-w-2xl space-y-3">
+            <span class="inline-block text-xs font-bold text-blue-400 tracking-widest uppercase">CUSTOMER VALUE PROPOSITION</span>
+            <h3 class="text-2xl sm:text-3xl font-black tracking-tight text-white">
+              하나로AI와 함께하는 사장님이<br class="hidden sm:block">
+              얻게 되는 <span class="text-blue-400">4가지 변화</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed">
+              흩어진 콘텐츠·마케팅·판매 운영을 하나의 흐름으로 연결해, 사장님은 좋은 상품을 만드는 일에 집중하세요.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Benefit 1 -->
+            <div class="bg-white/5 border border-white/10 hover:border-blue-400/50 rounded-2xl p-6 backdrop-blur-sm transition-all hover:-translate-y-1 space-y-3">
+              <div class="text-3xl">⏱️</div>
+              <h4 class="text-base font-bold text-white tracking-tight">콘텐츠 운영 부담 감소</h4>
+              <p class="text-xs text-slate-300 leading-relaxed font-normal">
+                주제 선정부터 자료 조사, 작성, 발행까지 혼자 하던 일을 하나로AI가 함께합니다.
+              </p>
+              <div class="pt-2 text-[11px] font-bold text-blue-300">
+                기획 &rarr; 발행까지 한 번에
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="bg-white/5 border border-white/10 hover:border-indigo-400/50 rounded-2xl p-6 backdrop-blur-sm transition-all hover:-translate-y-1 space-y-3">
+              <div class="text-3xl">💰</div>
+              <h4 class="text-base font-bold text-white tracking-tight">광고 의존도 감소</h4>
+              <p class="text-xs text-slate-300 leading-relaxed font-normal">
+                광고를 멈추면 끊기는 유입이 아니라, 쌓이는 정보 콘텐츠가 계속 고객을 데려옵니다.
+              </p>
+              <div class="pt-2 text-[11px] font-bold text-indigo-300">
+                쌓일수록 강해지는 콘텐츠 자산
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="bg-white/5 border border-white/10 hover:border-emerald-400/50 rounded-2xl p-6 backdrop-blur-sm transition-all hover:-translate-y-1 space-y-3">
+              <div class="text-3xl">📈</div>
+              <h4 class="text-base font-bold text-white tracking-tight">자연스러운 구매 연결</h4>
+              <p class="text-xs text-slate-300 leading-relaxed font-normal">
+                고민을 해결하는 정보 속에서 상품을 만나, 신뢰를 바탕으로 구매·예약·문의로 이어집니다.
+              </p>
+              <div class="pt-2 text-[11px] font-bold text-emerald-300">
+                정보 &rarr; 신뢰 &rarr; 구매
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="bg-white/5 border border-white/10 hover:border-purple-400/50 rounded-2xl p-6 backdrop-blur-sm transition-all hover:-translate-y-1 space-y-3">
+              <div class="text-3xl">🚀</div>
+              <h4 class="text-base font-bold text-white tracking-tight">한 곳에서 통합관리</h4>
+              <p class="text-xs text-slate-300 leading-relaxed font-normal">
+                상품·주문·예약·회원·문의·커뮤니티·콘텐츠 성과를 하나의 관리자 화면에서 확인합니다.
+              </p>
+              <div class="pt-2 text-[11px] font-bold text-purple-300">
+                운영과 성과를 한눈에
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2.3 강력한 CTA 섹션 (High-converting Call To Action) -->
+      <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden text-center space-y-6">
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+        
+        <div class="max-w-2xl mx-auto space-y-3 relative z-10">
+          <span class="inline-block px-3.5 py-1 bg-white/15 border border-white/25 rounded-full text-xs font-bold text-amber-300 backdrop-blur-sm tracking-wide">
+            ⚡ 지금 바로 시작하세요
+          </span>
+          <h3 class="text-2xl sm:text-4xl font-black tracking-tight text-white leading-snug">
+            광고 고민 대신, 고객이 찾는 정보로<br>
+            첫 판매 콘텐츠를 만들어보세요
+          </h3>
+          <p class="text-xs sm:text-base text-blue-100 font-normal leading-relaxed">
+            상품만 입력하면 하나로AI가 고객의 질문을 분석하고 콘텐츠를 제안합니다.<br class="hidden sm:block">
+            좋은 상품이 고객에게 발견되고 판매되는 경험을 지금 시작해보세요.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3.5 relative z-10 pt-2">
+          <button
+            type="button"
+            onclick="scrollToHeroGenerator()"
+            class="px-7 py-4 bg-white text-indigo-700 hover:bg-blue-50 font-black text-sm rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2 cursor-pointer"
+          >
+            <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span>무료로 첫 콘텐츠 만들어보기</span>
+          </button>
+          
+          <button
+            type="button"
+            onclick="scrollToStoreSection()"
+            class="px-7 py-4 bg-white/15 hover:bg-white/25 text-white border border-white/30 font-bold text-sm rounded-2xl backdrop-blur-sm hover:-translate-y-0.5 transition-all flex items-center gap-2 cursor-pointer"
+          >
+            <span>스토어 상품 둘러보기</span>
+            <span class="text-xs">&rarr;</span>
+          </button>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="flex flex-wrap justify-center items-center gap-6 pt-3 text-xs text-blue-100/90 font-medium relative z-10">
+          <span class="flex items-center gap-1.5">
+            <span class="text-amber-300">★</span> 고객 질문 기반 콘텐츠
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="text-amber-300">★</span> 검색·AI·SNS 노출
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="text-amber-300">★</span> 스토어 판매·예약 연동
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- 3.1 상품 리스트 Section (Clean Modern Commerce Cards) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <th:block th:each="prdt_data: ${menu_prdt_lst}">
+        <div class="space-y-6 mb-14">
+          <div class="flex items-center justify-between border-b border-slate-200/80 pb-4">
+            <div class="flex items-center gap-2.5">
+              <span class="w-2 h-6 bg-indigo-600 rounded-full"></span>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight" th:text="${prdt_data['menu_nm']}">
+                스토어 인기 상품</h2>
+            </div>
+            <a th:href="@{/site/{enc}/{menu_id}(enc=${dscd['dscd_as_enc']}, menu_id = ${prdt_data['menu_id']})}"
+              class="text-xs sm:text-sm font-bold text-indigo-600 hover:text-indigo-700 transition-colors flex items-center gap-1">
+              전체보기 &rarr;
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <th:block th:each="prdt: ${prdt_data?.val.prdt_lst}">
+              <div
+                class="bg-white rounded-2xl border border-slate-200/70 hover:border-indigo-200 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col overflow-hidden group">
+                <a th:href="@{/{site}/{dscd_as}/{menu_id}(site='site', dscd_as=${dscd['dscd_as_enc']}, menu_id=${prdt_data['menu_id']}, itm_id=${prdt['itm_id']}, prdt_id=${prdt['prdt_id']}, mode = 'viw')}"
+                  class="block aspect-4/3 relative overflow-hidden bg-slate-100">
+                  <th:block th:if="${prdt['prdt_thumb_src'] != null}">
+                    <img th:src="${prdt['prdt_thumb_src']}"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      alt="상품 썸네일">
+                  </th:block>
+                  <div
+                    class="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-[11px] font-bold px-2 py-0.5 rounded-md shadow-xs text-indigo-600 border border-slate-100">
+                    BEST
+                  </div>
+                </a>
+                <div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+                  <div class="space-y-1.5">
+                    <h3
+                      class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors line-clamp-1"
+                      th:text="${prdt['prdt_tit']}">저자극 비타민C 세럼</h3>
+                    <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed" th:text="${prdt['prdt_ctts']}">민감한
+                      피부도 부담 없이 사용할 수 있는 순한 성분의 데일리 세럼입니다.</p>
+                  </div>
+                  <div
+                    class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400 font-medium">
+                    <span class="flex items-center gap-1 text-slate-500">
+                      👁️ <span th:text="${prdt['prdt_hit_cnt']}">0</span>
+                    </span>
+                    <span class="text-slate-400 text-[11px]"
+                      th:text="${#temporals.format(T(java.time.OffsetDateTime).parse(prdt['wrt_at']), 'yyyy.MM.dd')}">2026.08.13</span>
+                  </div>
+                </div>
+              </div>
+            </th:block>
+          </div>
+        </div>
+      </th:block>
+    </section>
+
+    <!-- 3.2 지식정보 리스트 Section (Clean Editorial Cards) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <th:block th:each="info_data: ${menu_info_lst}">
+        <div class="space-y-6 mb-14">
+          <div class="flex items-center justify-between border-b border-slate-200/80 pb-4">
+            <div class="flex items-center gap-2.5">
+              <span class="w-2 h-6 bg-rose-500 rounded-full"></span>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight" th:text="${info_data['menu_nm']}">
+                고객이 찾는 정보 콘텐츠</h2>
+            </div>
+            <a th:href="@{/site/{enc}/{menu_id}(enc=${dscd['dscd_as_enc']}, menu_id = ${info_data['menu_id']})}"
+              class="text-xs sm:text-sm font-bold text-rose-600 hover:text-rose-700 transition-colors flex items-center gap-1">
+              전체보기 &rarr;
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <th:block th:each="prdt: ${info_data?.val.prdt_lst}">
+              <article
+                class="bg-white rounded-2xl border border-slate-200/70 hover:border-rose-200 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 p-5 space-y-4 flex flex-col justify-between group">
+                <div class="space-y-3">
+                  <th:block th:if="${prdt['prdt_thumb_src'] != null}">
+                    <div class="aspect-16/9 rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
+                      <img th:src="${prdt['prdt_thumb_src']}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                  </th:block>
+                  <a th:href="@{/{site}/{dscd_as}/{menu_id}(site='site', dscd_as=${dscd['dscd_as_enc']}, menu_id=${info_data['menu_id']}, itm_id=${prdt['itm_id']}, prdt_id=${prdt['prdt_id']}, mode = 'viw')}"
+                    class="block">
+                    <h3
+                      class="text-base font-bold text-slate-900 group-hover:text-rose-600 transition-colors line-clamp-1"
+                      th:text="${prdt['prdt_tit']}">여름철 기미·잡티 관리, 이렇게 시작하세요</h3>
+                  </a>
+                  <p class="text-xs text-slate-500 leading-relaxed line-clamp-3" th:text="${prdt['prdt_ctts']}">여러 출처의
+                    정보를 바탕으로 정리한 피부 타입별 관리 방법과 성분 선택 기준을 알려드립니다.</p>
+                </div>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+                  <span class="text-slate-500">조회 <strong class="text-slate-700"
+                      th:text="${prdt['prdt_hit_cnt']}">0</strong></span>
+                  <span class="text-[11px]"
+                    th:text="${#temporals.format(T(java.time.OffsetDateTime).parse(prdt['wrt_at']), 'yyyy.MM.dd')}">2026.08.13</span>
+                </div>
+              </article>
+            </th:block>
+          </div>
+        </div>
+      </th:block>
+    </section>
+
+    <!-- 3.3 영상정보 리스트 Section (Clean Media Cards) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <th:block th:each="move_data: ${menu_move_lst}">
+        <div class="space-y-6 mb-14">
+          <div class="flex items-center justify-between border-b border-slate-200/80 pb-4">
+            <div class="flex items-center gap-2.5">
+              <span class="w-2 h-6 bg-amber-500 rounded-full"></span>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight" th:text="${move_data['menu_nm']}">
+                영상으로 보는 정보</h2>
+            </div>
+            <a th:href="@{/site/{enc}/{menu_id}(enc=${dscd['dscd_as_enc']}, menu_id = ${move_data['menu_id']})}"
+              class="text-xs sm:text-sm font-bold text-amber-600 hover:text-amber-700 transition-colors flex items-center gap-1">
+              전체보기 &rarr;
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <th:block th:each="prdt: ${move_data?.val.prdt_lst}">
+              <div
+                class="bg-white rounded-2xl border border-slate-200/70 hover:border-amber-200 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 overflow-hidden group">
+                <a th:href="@{/{site}/{dscd_as}/{menu_id}(site='site', dscd_as=${dscd['dscd_as_enc']}, menu_id=${move_data['menu_id']}, itm_id=${prdt['itm_id']}, prdt_id=${prdt['prdt_id']}, mode = 'viw')}"
+                  class="block aspect-video relative bg-slate-900 overflow-hidden">
+                  <th:block th:if="${prdt['prdt_thumb_src'] != null}">
+                    <img th:src="${prdt['prdt_thumb_src']}"
+                      class="w-full h-full object-cover group-hover:opacity-85 transition-opacity">
+                  </th:block>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div
+                      class="w-11 h-11 rounded-full bg-white/95 text-amber-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      ▶
+                    </div>
+                  </div>
+                </a>
+                <div class="p-5 space-y-2">
+                  <h3
+                    class="text-base font-bold text-slate-900 group-hover:text-amber-600 transition-colors line-clamp-1"
+                    th:text="${prdt['prdt_tit']}">피부 타입별 세럼 고르는 법</h3>
+                  <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed" th:text="${prdt['prdt_ctts']}">고객이
+                    자주 묻는 질문을 바탕으로 핵심 정보를 짧은 영상으로 정리했습니다.</p>
+                  <div class="pt-3 border-t border-slate-100 flex justify-between text-xs text-slate-400">
+                    <span class="text-slate-500" th:text="${prdt['prdt_hit_cnt']} + '회 시청'">0회 시청</span>
+                    <span class="text-[11px]"
+                      th:text="${#temporals.format(T(java.time.OffsetDateTime).parse(prdt['wrt_at']), 'yyyy.MM.dd')}">2026.08.13</span>
+                  </div>
+                </div>
+              </div>
+            </th:block>
+          </div>
+        </div>
+      </th:block>
+    </section>
+
+    <!-- 3.4 커뮤니티 리스트 Section (Clean Minimal Feed Row) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <th:block th:each="ctts_data: ${menu_ctts_lst}">
+        <div class="space-y-6 mb-14">
+          <div class="flex items-center justify-between border-b border-slate-200/80 pb-4">
+            <div class="flex items-center gap-2.5">
+              <span class="w-2 h-6 bg-emerald-500 rounded-full"></span>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight" th:text="${ctts_data['menu_nm']}">
+                커뮤니티 최근 소통글</h2>
+            </div>
+            <a th:href="@{/site/{enc}/{menu_id}(enc=${dscd['dscd_as_enc']}, menu_id = ${ctts_data['menu_id']})}"
+              class="text-xs sm:text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors flex items-center gap-1">
+              전체보기 &rarr;
+            </a>
+          </div>
+
+          <div class="space-y-3.5">
+            <th:block th:each="ctts: ${ctts_data?.val.ctts_lst}">
+              <a th:href="@{/{site}/{dscd_as}/{menu_id}(site='site', dscd_as=${dscd['dscd_as_enc']}, menu_id=${ctts_data['menu_id']}, cmnt_id=${ctts['cmnt_id']}, ctts_id=${ctts['ctts_id']}, mode = 'viw')}"
+                class="block bg-white rounded-2xl border border-slate-200/70 p-5 hover:border-emerald-200 shadow-xs hover:shadow-md transition-all duration-200 group">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div class="flex items-start gap-3.5">
+                    <th:block th:if="${ctts['ctts_thumb_src'] != null}">
+                      <img th:src="${ctts['ctts_thumb_src']}"
+                        class="w-14 h-14 rounded-xl object-cover shrink-0 border border-slate-100">
+                    </th:block>
+                    <div class="space-y-1">
+                      <h3
+                        class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-emerald-600 transition-colors line-clamp-1"
+                        th:text="${ctts['ctts_tit']}">민감성 피부인데 비타민C 세럼 써도 괜찮을까요?</h3>
+                      <p class="text-xs text-slate-500 line-clamp-1 leading-relaxed" th:text="${ctts['ctts_ctts']}">
+                        사용 경험과 궁금한 점을 함께 나누는 공간입니다.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3.5 text-xs text-slate-400 shrink-0 self-end sm:self-center">
+                    <span
+                      class="px-2 py-0.5 bg-slate-50 rounded-md border border-slate-100 text-slate-600 font-medium">💬
+                      댓글</span>
+                    <span class="text-slate-500">👁️ <span th:text="${ctts['ctts_hit_cnt']}">0</span></span>
+                    <span class="text-[11px]"
+                      th:text="${#temporals.format(T(java.time.OffsetDateTime).parse(ctts['wrt_at']), 'yyyy.MM.dd')}">2026.08.13</span>
+                  </div>
+                </div>
+              </a>
+            </th:block>
+          </div>
+        </div>
+      </th:block>
+    </section>
+
+    <!-- AI Draft Generator Modal Dialog (하나로AI 콘텐츠 기획 생성기) -->
+    <div id="public-ai-modal" style="display: none; position: fixed; inset: 0; z-index: 10000;"
+      class="animate-in fade-in duration-200">
+      <!-- Backdrop Overlay -->
+      <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs" onclick="closePublicAiModal()"></div>
+
+      <!-- Modal Container -->
+      <div class="fixed inset-0 overflow-y-auto flex items-center justify-center p-4">
+        <div
+          class="relative bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200/80 my-6 z-10 animate-in zoom-in-95 duration-200">
+
+          <!-- Modal Header -->
+          <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+            <div class="flex items-center gap-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                  내 상품 정보를 확인해주세요.
+                </h3>
+                <p class="text-xs text-slate-500 font-medium mt-0.5">
+                  고객 질문 기반 정보 콘텐츠 기획 및 생성기
+                </p>
+              </div>
+            </div>
+            <button type="button" aria-label="닫기" onclick="closePublicAiModal()"
+              class="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Form Fields -->
+          <div class="space-y-4">
+            <!-- Input 1: Service Name -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+                스토어·브랜드명 <span class="text-rose-500">*</span>
+              </label>
+              <input type="text" id="id_dscd_frm_inpd_dscd_nm" placeholder="스토어 또는 브랜드명을 입력해주세요."
+                class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-900 placeholder-slate-400 focus:bg-white focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/10 focus:outline-none transition-all" />
+            </div>
+
+            <!-- Encouragement Sub-heading -->
+            <div class="p-3 bg-indigo-50/70 border border-indigo-100 rounded-xl flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+              <p class="text-xs font-semibold text-indigo-900 leading-snug">
+                좋은 상품이에요! 하나로AI가 입력하신 상품 정보를 정리했어요.
+              </p>
+            </div>
+
+            <!-- Textarea 1: Idea Introduction -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+                상품·서비스 소개
+              </label>
+              <textarea rows="4" id="id_dscd_frm_inpd_dscd_intro" placeholder="상품과 서비스의 특징, 주요 고객, 강점을 작성해주세요."
+                class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm leading-relaxed text-slate-800 placeholder-slate-400 focus:bg-white focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/10 focus:outline-none transition-all resize-y min-h-[100px]"></textarea>
+            </div>
+
+            <!-- Textarea 2: Collected Keywords -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                </svg>
+                고객 질문 키워드
+              </label>
+              <textarea rows="4" id="id_dscd_frm_inpd_dscd_keyword" placeholder="고객이 검색할 만한 키워드를 입력해주세요. (예: 기미 관리, 민감성 피부 세럼)"
+                class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm leading-relaxed text-slate-800 placeholder-slate-400 focus:bg-white focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/10 focus:outline-none transition-all resize-y min-h-[100px]"></textarea>
+            </div>
+          </div>
+
+          <!-- Primary Action Button -->
+          <div class="pt-3">
+            <button type="button" id="btnReg"
+              class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-indigo-600/25 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50">
+              <span id="public-ai-gen-text">콘텐츠 만들기</span>
+            </button>
+          </div>
+
+          <!-- Result Box -->
+          <div id="public-ai-result-box" style="display: none;" class="space-y-3 pt-4 border-t border-slate-200">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-600 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                생성 완료 (콘텐츠 미리보기)
+              </span>
+              <button type="button" id="public-ai-copy-btn" onclick="copyPublicAiResult()"
+                class="flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-indigo-600 transition-colors cursor-pointer bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span id="public-ai-copy-text">콘텐츠 전체 복사</span>
+              </button>
+            </div>
+
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2.5 max-h-60 overflow-y-auto">
+              <h4 id="public-ai-result-title" class="font-bold text-slate-900 text-sm"></h4>
+              <div id="public-ai-result-content" class="text-xs text-slate-600 whitespace-pre-wrap leading-relaxed">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- DEDICATED LOADING POPUP MODAL (로딩 시 팝업창) -->
+    <div id="public-ai-loading-modal" style="display: none; position: fixed; inset: 0; z-index: 10001;"
+      class="animate-in fade-in duration-200">
+      <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-md"></div>
+      <div class="fixed inset-0 overflow-y-auto flex items-center justify-center p-4">
+        <div
+          class="relative bg-white rounded-3xl max-w-md w-full p-7 sm:p-8 shadow-2xl border border-slate-200 text-center space-y-6 animate-in zoom-in-95 duration-200 overflow-hidden">
+          <!-- Top Glowing Gradient Line -->
+          <div
+            class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 animate-pulse">
+          </div>
+
+          <!-- Pulsing Icon Visual -->
+          <div class="flex justify-center pt-2">
+            <div class="relative">
+              <div
+                class="w-20 h-20 rounded-3xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 shadow-inner">
+                <svg class="w-10 h-10 animate-spin text-indigo-600" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+              </div>
+              <div
+                class="absolute -top-1.5 -right-1.5 w-7 h-7 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center shadow-md animate-bounce">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Titles & Headings -->
+          <div class="space-y-2">
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">
+              정보 콘텐츠를 만들고 있습니다
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-medium">
+              하나로AI가 입력하신 상품을 분석해 고객이 찾는 질문을 발견하고, 검증된 정보로 콘텐츠를 작성 중입니다.
+            </p>
+          </div>
+
+          <!-- Dynamic Step Progress Card -->
+          <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200/80 text-left space-y-3">
+            <div class="flex items-center justify-between text-xs font-bold text-indigo-600">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span>
+                <span id="loading-step-counter">진행 단계 (1/4)</span>
+              </span>
+              <span id="loading-percent-counter" class="text-slate-400 font-semibold text-[11px]">
+                25%
+              </span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+              <div id="loading-progress-bar"
+                class="h-full bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full transition-all duration-500"
+                style="width: 25%;"></div>
+            </div>
+
+            <!-- Current Step Description -->
+            <div class="pt-1 flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p id="loading-step-title" class="text-xs font-bold text-slate-800">
+                  상품 정보와 핵심 키워드 분석 중...
+                </p>
+                <p id="loading-step-desc" class="text-[11px] text-slate-500 mt-0.5">
+                  입력하신 상품의 특징과 강점을 정리합니다
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Reassuring Notice -->
+          <p class="text-[11px] text-slate-400">
+            ⚡ 잠시 후 정보 콘텐츠 초안이 화면에 표시됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      function goToSlide(index) {
+        currentSlide = index;
+        const container = document.getElementById('slide-container');
+        const dots = document.querySelectorAll('.slide-dot');
+        if (container) {
+          container.style.transform = `translateX(-${index * 100}%)`;
+        }
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.remove('bg-slate-300', 'w-2');
+            dot.classList.add('bg-indigo-600', 'w-6');
+          } else {
+            dot.classList.remove('bg-indigo-600', 'w-6');
+            dot.classList.add('bg-slate-300', 'w-2');
+          }
+        });
+      }
+
+      // Auto Swipe Interval
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % 2;
+        goToSlide(currentSlide);
+      }, 5000);
+
+      // Modal AI Logic
+      function openPublicAiModalFromHero() {
+        const heroTopic = document.getElementById('inline-ai-topic')?.value || '';
+        const heroKeywords = document.getElementById('inline-ai-keywords')?.value || '';
+
+        const sNameInput = document.getElementById('public-ai-service-name');
+        const catInput = document.getElementById('public-ai-category');
+        const keywordsInput = document.getElementById('public-ai-keywords');
+        const ideaInput = document.getElementById('public-ai-idea');
+
+        if (heroTopic) {
+          if (sNameInput) sNameInput.value = heroTopic;
+          if (catInput) catInput.value = '소상공인 스토어';
+        }
+        if (heroKeywords) {
+          if (keywordsInput) keywordsInput.value = heroKeywords;
+          if (ideaInput && heroTopic) {
+            ideaInput.value = heroTopic + '의 상품 특징과 고객이 궁금해하는 정보를 바탕으로, 고객의 질문에 답하고 상품으로 자연스럽게 연결되는 정보 콘텐츠입니다.';
+          }
+        }
+
+        openPublicAiModal();
+      }
+
+      function openPublicAiModal() {
+        const modal = document.getElementById('public-ai-modal');
+        if (modal) {
+          if (modal.parentElement !== document.body) {
+            document.body.appendChild(modal);
+          }
+          document.body.style.overflow = 'hidden';
+          modal.style.display = 'block';
+        }
+      }
+
+      function closePublicAiModal() {
+        const modal = document.getElementById('public-ai-modal');
+        if (modal) {
+          document.body.style.overflow = '';
+          modal.style.display = 'none';
+        }
+      }
+
+      let publicLoadingInterval = null;
+      const publicLoadingSteps = [
+        { title: '상품 정보와 핵심 키워드 분석 중...', desc: '입력하신 상품의 특징과 강점을 정리합니다' },
+        { title: '고객이 찾는 질문 발견 중...', desc: '키워드와 관련된 고객의 관심 주제를 분석합니다' },
+        { title: '정보 수집 및 사실 확인 중...', desc: '여러 출처의 정보를 정리하고 내용을 교차 확인합니다' },
+        { title: '정보 콘텐츠 작성 및 상품 연결 중...', desc: '고객 질문에 답하는 콘텐츠를 완성하고 상품을 연결합니다' }
+      ];
+
+      function showPublicLoadingModal() {
+        const loadingModal = document.getElementById('public-ai-loading-modal');
+        if (loadingModal) {
+          if (loadingModal.parentElement !== document.body) {
+            document.body.appendChild(loadingModal);
+          }
+          loadingModal.style.display = 'block';
+        }
+
+        let stepIdx = 0;
+        updateLoadingStepUI(stepIdx);
+
+        if (publicLoadingInterval) clearInterval(publicLoadingInterval);
+        publicLoadingInterval = setInterval(() => {
+          stepIdx = (stepIdx + 1) % publicLoadingSteps.length;
+          updateLoadingStepUI(stepIdx);
+        }, 1400);
+      }
+
+      function updateLoadingStepUI(idx) {
+        const step = publicLoadingSteps[idx];
+        const percent = Math.round(((idx + 1) / publicLoadingSteps.length) * 100);
+
+        const counter = document.getElementById('loading-step-counter');
+        const percentEl = document.getElementById('loading-percent-counter');
+        const progressBar = document.getElementById('loading-progress-bar');
+        const titleEl = document.getElementById('loading-step-title');
+        const descEl = document.getElementById('loading-step-desc');
+
+        if (counter) counter.innerText = `진행 단계 (${idx + 1}/${publicLoadingSteps.length})`;
+        if (percentEl) percentEl.innerText = `${percent}%`;
+        if (progressBar) progressBar.style.width = `${percent}%`;
+        if (titleEl) titleEl.innerText = step.title;
+        if (descEl) descEl.innerText = step.desc;
+      }
+
+      function hidePublicLoadingModal() {
+        if (publicLoadingInterval) clearInterval(publicLoadingInterval);
+        const loadingModal = document.getElementById('public-ai-loading-modal');
+        if (loadingModal) {
+          loadingModal.style.display = 'none';
+        }
+      }
+
+      async function generatePublicAiDraft() {
+        const serviceName = document.getElementById('public-ai-service-name')?.value.trim() || '내 스토어';
+        const category = document.getElementById('public-ai-category')?.value.trim() || '소상공인 스토어';
+        const ideaDescription = document.getElementById('public-ai-idea')?.value.trim() || '';
+        const keywords = document.getElementById('public-ai-keywords')?.value.trim() || '';
+
+        const genBtn = document.getElementById('public-ai-gen-btn');
+        const genText = document.getElementById('public-ai-gen-text');
+        const resultBox = document.getElementById('public-ai-result-box');
+        const resultTitle = document.getElementById('public-ai-result-title');
+        const resultContent = document.getElementById('public-ai-result-content');
+
+        if (!serviceName && !category) {
+          alert('스토어·브랜드명 또는 카테고리를 입력해주세요.');
+          return;
+        }
+
+        if (genBtn) genBtn.disabled = true;
+        if (genText) genText.innerText = '생성 중...';
+        showPublicLoadingModal();
+
+        try {
+          const response = await fetch('/api/ai/generate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              type: 'community',
+              serviceName: serviceName,
+              category: category,
+              ideaDescription: ideaDescription,
+              keywords: keywords,
+              topic: serviceName + ' - ' + category
+            })
+          });
+
+          const data = await response.json();
+          if (data.status === 'ok') {
+            if (resultTitle) resultTitle.innerText = data.title || (serviceName + ' - ' + category);
+            if (resultContent) resultContent.innerText = data.content || '';
+            if (resultBox) resultBox.style.display = 'block';
+          } else {
+            alert('생성 중 오류가 발생했습니다: ' + (data.message || '서버 응답 오류'));
+          }
+        } catch (e) {
+          console.error(e);
+          alert('서버와 통신할 수 없습니다.');
+        } finally {
+          hidePublicLoadingModal();
+          if (genBtn) genBtn.disabled = false;
+          if (genText) genText.innerText = '콘텐츠 만들기';
+        }
+      }
+
+      function copyPublicAiResult() {
+        const title = document.getElementById('public-ai-result-title')?.innerText || '';
+        const content = document.getElementById('public-ai-result-content')?.innerText || '';
+        const copyText = document.getElementById('public-ai-copy-text');
+
+        if (!content) return;
+        navigator.clipboard.writeText(title + '\n\n' + content).then(() => {
+          if (copyText) {
+            copyText.innerText = '복사 완료!';
+            setTimeout(() => {
+              copyText.innerText = '콘텐츠 전체 복사';
+            }, 2000);
+          }
+        });
+      }
+    </script>
+  </main>
