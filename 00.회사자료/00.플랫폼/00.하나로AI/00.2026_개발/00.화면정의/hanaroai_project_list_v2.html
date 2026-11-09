@@ -1,0 +1,164 @@
+
+    <!-- ========================================================================= -->
+    <!-- Main Content Area (하나로AI 메인 시안 톤 리디자인 / knockout 바인딩 유지)      -->
+    <!-- ========================================================================= -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        <!-- ===================================================================== -->
+        <!-- Top Header (그라데이션 히어로)                                          -->
+        <!-- ===================================================================== -->
+        <div class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#EEF3FF] via-[#F5F8FF] to-[#FFF6EE] border border-slate-200/70 px-6 sm:px-10 py-8 sm:py-10 mb-6">
+            <div class="absolute -top-24 -right-24 w-80 h-80 bg-orange-200/40 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-blue-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+                <div>
+                    <p class="text-xs font-bold text-blue-600 tracking-[0.2em]">PROJECT MANAGEMENT</p>
+                    <h1 class="mt-2 text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
+                        프로젝트 <span class="text-blue-600">리스트</span>
+                    </h1>
+                    <p class="text-sm sm:text-base text-slate-600 mt-2">
+                        등록된 디자인코드별 스케줄 상태, 자동화 실행 현황 및 사용용량을 한눈에 관리하세요.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-8">
+                <div class="bg-white/85 backdrop-blur rounded-2xl border border-slate-200/80 p-4 sm:p-5 flex items-center gap-4">
+                    <div class="w-11 h-11 shrink-0 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M7 3h7l5 5v13H7z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-500">전체 프로젝트</p>
+                        <!-- dscd_lst 가 observableArray / 일반 배열 모두 대응 -->
+                        <p class="text-2xl font-black text-slate-950"><span data-bind="text: ko.unwrap(dscd_lst).length">0</span><span class="text-sm font-bold text-slate-400 ml-1">개</span></p>
+                    </div>
+                </div>
+                <div class="bg-white/85 backdrop-blur rounded-2xl border border-slate-200/80 p-4 sm:p-5 flex items-center gap-4">
+                    <div class="w-11 h-11 shrink-0 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-500">스케줄 활성</p>
+                        <!-- TODO: 활성 건수 바인딩 연결 -->
+                        <p class="text-2xl font-black text-slate-950">-<span class="text-sm font-bold text-slate-400 ml-1">개</span></p>
+                    </div>
+                </div>
+                <div class="bg-white/85 backdrop-blur rounded-2xl border border-slate-200/80 p-4 sm:p-5 flex items-center gap-4">
+                    <div class="w-11 h-11 shrink-0 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-500">자동화 실행</p>
+                        <!-- TODO: 자동화 실행 건수 바인딩 연결 -->
+                        <p class="text-2xl font-black text-slate-950">-<span class="text-sm font-bold text-slate-400 ml-1">건</span></p>
+                    </div>
+                </div>
+                <div class="bg-white/85 backdrop-blur rounded-2xl border border-slate-200/80 p-4 sm:p-5 flex items-center gap-4">
+                    <div class="w-11 h-11 shrink-0 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path stroke-linecap="round" d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-500">총 사용 용량</p>
+                        <!-- TODO: 총 사용 용량 바인딩 연결 -->
+                        <p class="text-2xl font-black text-slate-950">-<span class="text-sm font-bold text-slate-400 ml-1">MB</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================================================================== -->
+        <!-- Desktop Table Header (Visible only on md+ screens)                    -->
+        <!-- ===================================================================== -->
+        <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3 text-xs font-bold text-slate-400 tracking-wide mb-1">
+            <div class="col-span-3 text-left">디자인코드</div>
+            <div class="col-span-2 text-left">상태</div>
+            <div class="col-span-2 text-left">자동화</div>
+            <div class="col-span-2 text-left">사용용량</div>
+            <div class="col-span-3 text-right pr-1">도구</div>
+        </div>
+
+        <!-- ===================================================================== -->
+        <!-- UNIFIED RESPONSIVE PROJECT LIST (Pure HTML Elements, Single Codebase) -->
+        <!-- knockout foreach 유지                                                   -->
+        <!-- ===================================================================== -->
+        <div class="space-y-4" data-bind="foreach : dscd_lst">
+
+            <div class="group bg-white border border-slate-200 rounded-3xl p-5 md:py-5 md:px-6 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-900/5 transition-all flex flex-col md:grid md:grid-cols-12 md:items-center gap-4">
+
+                <!-- 디자인코드 & 모바일 링크이동 버튼 -->
+                <div class="flex items-center justify-between md:col-span-3 gap-3">
+                    <div class="flex items-center gap-4 min-w-0">
+                        <!-- 이니셜 아바타 -->
+                        <div class="w-12 h-12 shrink-0 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100 text-indigo-600 flex items-center justify-center text-lg font-black"
+                            data-bind="text: (ko.unwrap(dscd_as) || '').toString().charAt(0).toUpperCase()"></div>
+                        <div class="min-w-0">
+                            <div class="text-base font-extrabold text-slate-950 tracking-tight truncate group-hover:text-blue-600 transition-colors" data-bind="text: dscd_as"></div>
+                            <div class="text-sm text-slate-500 mt-0.5 truncate" data-bind="text: dscd_nm"></div>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="md:hidden shrink-0 px-4 py-2 text-xs font-bold text-blue-700 bg-white border border-blue-200 hover:bg-blue-50 rounded-full transition-colors cursor-pointer"
+                        data-bind="click: cstm__handler.fnGoLink, clickBubble:false">
+                        사이트 보기 ↗
+                    </button>
+                </div>
+
+                <!-- 상태 -->
+                <div class="md:col-span-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold"
+                        data-bind="css: (ko.unwrap(dscd_batch_use_nm) || '').toString().indexOf('비활성') > -1 ? 'bg-slate-100 text-slate-500' : 'bg-emerald-50 text-emerald-700'">
+                        <span class="w-1.5 h-1.5 rounded-full"
+                            data-bind="css: (ko.unwrap(dscd_batch_use_nm) || '').toString().indexOf('비활성') > -1 ? 'bg-slate-400' : 'bg-emerald-500'"></span>
+                        <span data-bind="text: dscd_batch_use_nm"></span>
+                    </span>
+                </div>
+
+                <!-- 자동화 -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center justify-between text-xs mb-1.5">
+                        <span class="font-semibold text-slate-400">자동화 실행</span>
+                        <span class="font-bold text-slate-700">1건 / 5건</span>
+                    </div>
+                    <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                        <div class="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" style="width: 20%;"></div>
+                    </div>
+                </div>
+
+                <!-- 사용용량 -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center justify-between text-xs mb-1.5">
+                        <span class="font-semibold text-slate-400">사용 용량</span>
+                        <span class="font-bold text-slate-700">1MB / 100MB</span>
+                    </div>
+                    <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                        <div class="h-full rounded-full bg-gradient-to-r from-orange-400 to-orange-500" style="width: 15%;"></div>
+                    </div>
+                </div>
+
+                <!-- 도구 (데스크톱 링크이동 + 스튜디오) -->
+                <div class="flex gap-2 justify-end md:col-span-3">
+                    <button type="button"
+                        class="hidden md:inline-flex items-center px-4 py-2.5 text-sm font-bold text-blue-700 bg-white border border-blue-200 hover:bg-blue-50 rounded-full transition-colors cursor-pointer"
+                        data-bind="click: cstm__handler.fnGoLink, clickBubble:false">
+                        사이트 보기 ↗
+                    </button>
+                    <div class="flex-1 md:flex-none" data-bind="click: cstm__handler.fnGoStdo, clickBubble:false">
+                        <button type="button"
+                            class="w-full md:w-auto px-6 py-2.5 text-sm font-bold text-white bg-[#4F46E5] hover:bg-[#4338CA] rounded-full shadow-md shadow-indigo-600/25 hover:-translate-y-0.5 transition-all cursor-pointer">
+                            스튜디오
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Empty State -->
+        <div class="py-16 text-center text-sm text-slate-400 bg-slate-50 rounded-3xl border border-dashed border-slate-200"
+            data-bind="visible: ko.unwrap(dscd_lst).length === 0" style="display:none;">
+            등록된 프로젝트가 없습니다.
+        </div>
+
+    </main>
